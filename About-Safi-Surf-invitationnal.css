@@ -3123,6 +3123,9 @@ img {
   border-radius: 50%;
   animation: spin 1.3s linear infinite;
 }
+.transparent-bg {
+  background: transparent !important;
+}
 
 @keyframes spin {
   to {
