@@ -1,14 +1,3 @@
-function handleTranslation(lang) {
-    if (lang=='english') {
-       window.location.pathname='index.html'
-    }else {
-       window.location.pathname='About-Safi-Surf-fr.html'
-    }
-}
-function pause() {
-   let video = document.getElementById("videoId")
-   video.contentWindow.postMessage( '{"event":"command", "func":"stopVideo", "args":""}', '*');
-}
 var container_number = document.querySelectorAll(".stat-number");
 
 let counts_1 = setInterval(updated_1);
@@ -69,6 +58,20 @@ function updated_7(){
    }
 }
 
+//let slideIndex = 1;
+//showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function togglenavbar() {
+   var navbar = document.querySelector(".navbar-sm");
+   navbar.classList.toggle("show");
+}
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -83,18 +86,23 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  slides[slideIndex-1].style.display = "block";  
 }
 
+
+const contact_container = document.querySelector('.contact-container')
+
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    
+      entry.target.classList.toggle('contact-container-animated',entry.isIntersecting)
+    
+  })
+})
+observer.observe(contact_container);
