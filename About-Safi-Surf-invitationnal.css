@@ -3478,3 +3478,20 @@ img {
     scale: 1;
   }
 }
+footer .insta svg {
+   width: 40px;
+   height: 40px;
+}
+footer .bahri img {
+   width: 100px;
+   height: 100px;
+   object-fit: contain;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
