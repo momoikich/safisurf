@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/black-rusher');
 .u-section-1 .u-sheet-1 {
   min-height: 812px;
 }
@@ -28,9 +29,37 @@
 .u-section-1 .u-container-layout-1 {
   padding: 30px;
 }
+#google_translate_element {
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    /* Custom styles for the language buttons */
+    .language-button {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .language-button:hover {
+        background-color: #f0f0f0;
+    }
 
 .u-section-1 .u-text-1 {
-  font-family: Alatsi;
+  font-family: 'Black Rusher', sans-serif;
   font-size: 4.5rem;
   line-height: 1;
   --animation-custom_in-translate_x: 0px;
@@ -2443,8 +2472,8 @@
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+  
 }
 
 .memory-container h2 {
@@ -2535,19 +2564,9 @@
   height: 24px;
 }
 
-.memory-container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.memory-container h2 {
-  font-size: 24px;
-  color: #333;
-}
+
+
 
 .memory-container p {
   font-size: 16px;
@@ -2727,10 +2746,13 @@
   width: 100vw;
   height: 100px;
   display: flex;
+  background-color: #459bd5;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 0 30px;
+  position: fixed;
+  z-index: 300;
+  
 }
 
 .logo-container {
@@ -2739,6 +2761,7 @@
   position: relative;
 
 }
+
 
 .logo-container a {
   width: 100%;
@@ -2821,6 +2844,9 @@
   z-index:  100;
 
 }
+.toggle {
+  display: flex;
+}
 
 .select-opt {
   display: flex;
@@ -2852,7 +2878,7 @@
 .navbar-head{
   display: flex;
   flex-direction:row;
-  gap:60px;
+  gap:25px;
 }
 .navbar-head a{
   text-decoration:none;
@@ -2861,9 +2887,12 @@
   text-transform: capitalize;
   font-weight: 600;
   transition: all 0.3s ease-in;
+  padding: 10px;
+  border-radius: 10px;
 }
 .navbar-head a:hover{
   color:#f26f43 ;
+  background-color: white;
 }
 
 .sm-menu svg{
@@ -2883,10 +2912,16 @@
   }
   .sm-menu{
     position:relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
   }
   .sm-menu svg{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
   .navbar-sm{
     display: flex;
@@ -2901,6 +2936,10 @@
     background: linear-gradient(20deg,white,whitesmoke);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
+  }
+  .show {
+    display: none;
+
   }
   .navbar-sm a{
     text-decoration:none;
@@ -3027,7 +3066,7 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -3037,6 +3076,11 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+}
+@media screen and (max-width:768px) {
+  .prev, .next {
+    top: 70%;
+  }
 }
 
 /* Position the "next button" to the right */
@@ -3126,7 +3170,10 @@ img {
 .transparent-bg {
   background: transparent !important;
 }
-
+.transparent-bg h1 {
+  font-family: 'Black Rusher', sans-serif;
+                                                
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -3165,6 +3212,12 @@ img {
   flex-direction: row;
   justify-content:space-around;
 }
+@media screen and (max-width:768px) {
+  .spin-body {
+    flex-direction: column;
+  }
+  
+}
 .waiting{
   font-size:28px;
   text-transform: capitalize;
@@ -3181,10 +3234,7 @@ img {
   padding-left: 18px;
   gap:10px;
 }
-.organizer svg{
-  width:32px;
-  height:32px;
-}
+
 .organizer-body{
   display:flex;
   flex-direction: column;
@@ -3199,13 +3249,232 @@ img {
   align-items:center;
   justify-content:flex-end;
 }
-.organizer svg{
-  color:#f24f43
+.organizer img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
+
 .contact-us-container  {
   display: flex;
   flex-direction: row;
 }
 .email-container {
   padding-left: 20px;
+}
+
+.event-info {
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25), 0 -4px 4px rgba(0, 0, 0, .25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.info-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+}
+
+.info-wrapper svg {
+  width: 24px;
+  height: 24px;
+  color: #f26f43;
+}
+
+.info-wrapper p {
+  font-size: 16px;
+  text-wrap: wrap;
+  width: calc(100% - 24px);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.event-header{
+  width: 100%;
+}
+.event-header h1{
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .memory-container {
+    padding-left: 16px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+  .info-col{
+    width:100%;
+  }
+  .event-header{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+}
+
+/* ---------------------------------------------------- */
+.contact-container{
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+
+}
+.contact-container-animated .contact-header{
+  opacity: 0;
+  scale:0;
+  animation: header linear forwards ;
+  animation-duration: 1000ms;
+}
+.contact-container-animated .contact-form
+{
+  opacity:0;
+  transform: translateX(-1000px);
+  animation: contactFade linear forwards;
+  animation-duration: 1200ms;
+}
+.contact-container-animated .contact-local{
+  opacity:0;
+  transform: translateX(1000px);
+  animation: contactFade linear forwards;
+  animation-duration: 1200ms;
+}
+.contact-wrapper{
+  display: flex;
+  flex-direction: row; 
+  width:100%; 
+}
+.contact-form,.contact-local{
+  width:50%;
+}
+.contact-header{
+    display:flex;
+  align-items:center;
+  justify-content:center;  
+  text-transform:capitalize;
+  letter-spacing: 4px; 
+  
+}
+.contact-form{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.contact-form form{
+  padding: 40px;
+  width:80%;
+  display:flex;
+  flex-direction:column;
+  border:1px solid grey;
+  border-radius: 14px;
+  gap:8px;
+}
+
+.form-inputs{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.form-inputs label{
+  font-weight: 500;
+}
+.form-inputs input,.form-inputs textarea{
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+
+.form-check{
+  padding: 20px 0;
+}
+.form-submit{
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.form-submit a{
+  width: 80%;
+  padding:20px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 34px;
+  font-size : 20px;
+  text-transform: uppercase;
+  background-color: #f26f43;
+  text-decoration: none;
+  color: white;
+  transition: all .3s ease;
+  font-weight:600;
+}
+.form-submit a:hover{
+  border: 2px solid #f24f43;
+  background-color: white;
+  color:#f24f43;
+}
+.contact-local{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-local iframe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:90%;
+}
+
+@media screen and (max-width: 1200px){
+  .contact-wrapper{
+    flex-direction:column;
+    gap:16px;
+  }
+  .contact-form,.contact-local{
+    width:100%;
+  }
+}
+
+@keyframes contactFade {
+  100%{
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes header {
+  100%{
+    opacity: 1;
+    scale: 1;
+  }
 }
