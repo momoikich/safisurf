@@ -3518,6 +3518,11 @@ footer .bahri img {
 .content-presentation p {
   width: 800px;
 }
+@media screen and (max-width:768px) {
+  .content-presentation p {
+    width: 320px;
+  }
+}
 .image_event {
   width: 100%;
 }
