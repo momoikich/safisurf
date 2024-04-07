@@ -2883,7 +2883,7 @@
 .navbar-head a{
   text-decoration:none;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: capitalize;
   font-weight: 600;
   transition: all 0.3s ease-in;
@@ -3070,7 +3070,8 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: black;
+  color: white;
+  background-color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -3494,4 +3495,37 @@ footer .bahri img {
   height: auto;
   align-items: center;
   justify-content: center;
+}
+.presentation-section {
+  padding-top: 80px;
+}
+.text-presentation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.content-presentation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.content-presentation p {
+  width: 800px;
+}
+.image_event {
+  width: 100%;
+}
+.image_event .container {
+  width: 100%;
+}
+.image_event .container .mySlides {
+  width: 100%;
+}
+.image_event img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
 }
