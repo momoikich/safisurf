@@ -205,7 +205,7 @@
 
 .u-section-2 .u-repeater-1 {
   grid-template-columns: repeat(3, 1fr);
-  min-height: 965px;
+  min-height: 550px;
   grid-gap: 20px;
 }
 .card-wrapper{
@@ -213,17 +213,10 @@
   gap:8px;
  }
  .card-box{
-  backdrop-filter: blur(2px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25) ;
+  cursor: pointer;
   
 }
- .card-box:hover{
-  /* transform: scale(1.03); */
-  scale : 1.03;
-  /* width: 101%; 
-  height: 101%;
-  transform:translate(-1%,1%)  */
- }
+ 
 
  .card-info{
   display: flex;
@@ -609,7 +602,7 @@
   }
 
   .u-section-2 .u-repeater-1 {
-    min-height: 790px;
+    min-height: 545px;
   }
 
   .u-section-2 .u-image-1 {
@@ -2490,19 +2483,9 @@
   width: 200px;
 }
 
-.card-box {
-  backdrop-filter: blur(2px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 
-}
 
-.card-box:hover {
-  /* transform: scale(1.03); */
-  scale: 1.03;
-  /* width: 101%; 
-  height: 101%;
-  transform:translate(-1%,1%)  */
-}
+
 
 .card-info {
   display: flex;
