@@ -3584,3 +3584,9 @@ footer .bahri img {
 .title-header-container:hover .line-title-header {
   width: 100%;
 }
+
+.image-grid-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
