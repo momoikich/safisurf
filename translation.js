@@ -1,3 +1,6 @@
+function go_media(){
+   window.location.href = "media.html";
+}
 var container_number = document.querySelectorAll(".stat-number");
 
 let counts_1 = setInterval(updated_1);
