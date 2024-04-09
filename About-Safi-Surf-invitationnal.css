@@ -3559,3 +3559,28 @@ footer .bahri img {
   width: 100%;
   object-fit: cover;
 }
+.title-header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.title-header-container {
+  position: relative;
+  font-size: 26px;
+  font-weight: 700;
+
+  width: auto;
+}
+.line-title-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f26f43;
+  transition: width 0.3s ease;
+}
+.title-header-container:hover .line-title-header {
+  width: 100%;
+}
