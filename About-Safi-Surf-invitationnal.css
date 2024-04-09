@@ -1692,7 +1692,8 @@
   .u-section-5 .u-layout-cell-3 {
     min-height: 100px;
   }
-} .u-section-6 {
+}
+ .u-section-6 {
   background-image: none;
   min-height: 944px;
   padding-top: 350px;
@@ -1832,6 +1833,9 @@
     width: 940px;
     height: 585px;
   }
+  .image-grid-containers {
+    gap: 120px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1899,8 +1903,10 @@
     width: 100%;
     height: 1904px;
     margin-top: -141px;
-    margin-bottom: -38px;
     padding: 0 10px;
+  }
+  .image-grid-containers {
+    gap: 200px;
   }
 } .u-section-7 {
   background-image: none;
