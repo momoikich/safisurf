@@ -165,7 +165,7 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 1240px;
+  min-height: 700px;
 }
 
 .u-section-2 .u-text-1 {
@@ -3170,7 +3170,7 @@ img {
 }
 
 .container h1{
-  font-size: 32px;
+  font-size: 44px;
   display: flex;
   justify-content: center;
   gap:6px;
@@ -3563,7 +3563,7 @@ footer .bahri img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 .title-header-container {
   position: relative;
