@@ -24593,7 +24593,7 @@ span.product-remove:after {
 .u-input,
 .u-field-input,
 .u-link[class*="u-border-"] {
-  border-style: solid;
+  /*border-style: solid;*/
 }
 .u-border-0,
 .u-separator-0:after,
@@ -24811,7 +24811,7 @@ a.u-button-style.u-border-14 {
 .u-input.u-border-15,
 .u-field-input.u-field-input.u-border-15,
 a.u-button-style.u-border-15 {
-  border-width: 15px;
+  /*border-width: 15px;*/
 }
 .u-shape-svg.u-border-15 {
   stroke-width: 15px;
@@ -24908,10 +24908,10 @@ a.u-button-style.u-border-20 {
 .u-radius:before,
 [class*="-radius-"] .u-background-effect,
 .u-radius .u-background-effect,
-[class*="-radius-"]:not(.u-hover-box) > .u-container-layout,
+/*[class*="-radius-"]:not(.u-hover-box) > .u-container-layout,
 .u-radius:not(.u-hover-box) > .u-container-layout {
   border-radius: var(--top-left-radius, var(--border-top-left-radius, var(--radius, var(--border-radius, 0)))) var(--top-right-radius, var(--border-top-right-radius, var(--radius, var(--border-radius, 0)))) var(--bottom-right-radius, var(--border-bottom-right-radius, var(--radius, var(--border-radius, 0)))) var(--bottom-left-radius, var(--border-bottom-left-radius, var(--radius, var(--border-radius, 0)))) !important;
-}
+}*/
 .u-radius-0 {
   --border-radius: 0px;
 }
