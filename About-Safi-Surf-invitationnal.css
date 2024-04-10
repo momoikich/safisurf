@@ -3753,7 +3753,9 @@ footer .bahri img {
   align-items: center;
   justify-content: center;
 }
-
+.read-more {
+  border-radius: 20px;
+}
 
 .card-wrapper{
   
@@ -3766,8 +3768,8 @@ footer .bahri img {
   /* Paint an image in the border */
   border-image: conic-gradient(
       from var(--angle),
-      #f26f43 0deg 90deg,
-      
+      #f26f43 0deg 45deg,
+      white 45deg 90deg,
       white 90deg 180deg,
       white 180deg 270deg,
 
