@@ -152,3 +152,74 @@ let x = setInterval(()=>{
    }
 })
 
+function typeEffect(element, speed) {
+  var text = element.innerHTML;
+  element.innerHTML = "";
+  
+  var i = 0;
+  var timer = setInterval(function() {
+    if (i < text.length) {
+      element.append(text.charAt(i));
+      i++;
+    } else {
+      clearInterval(timer);
+    }
+  }, speed);
+}
+
+
+// application
+var speed = 75;
+var h1 = document.querySelector('.memory-title h1');
+var p = document.querySelector('.paragraph-event');
+var delay = h1.innerHTML.length * speed + speed;
+
+// type affect to header
+typeEffect(h1, speed);
+
+// type affect to body
+setTimeout(function(){
+  typeEffect(p, speed);
+}, delay);
+// window.addEventListener("scroll",()=> {
+//    function typeEffect(element, speed) {
+//   var text = element.innerHTML;
+//   element.innerHTML = "";
+  
+//   var i = 0;
+//   var timer = setInterval(function() {
+//     if (i < text.length) {
+//       element.append(text.charAt(i));
+//       i++;
+//     } else {
+//       clearInterval(timer);
+//     }
+//   }, speed);
+//   }
+
+//   sections.forEach((section) => {
+//     const sectionTop = section.offsetTop;
+//     const sectionHeight = section.clientHeight;
+//     if (pageYOffset >= sectionTop - sectionHeight / 3) {
+//       current = section.getAttribute("id");
+//       if (current=="first-event") {
+//          var speed = 75;
+//          var h1 = document.querySelector('.memory-title h1');
+//          var p = document.querySelector('.paragraph-event');
+//          var delay = h1.innerHTML.length * speed + speed;
+
+//          // type affect to header
+//          typeEffect(h1, speed);
+
+//          // type affect to body
+//          setTimeout(function(){
+//             typeEffect(p, speed);
+//             }, delay);
+//          }
+//     }
+//   });
+   
+
+// })
+
+

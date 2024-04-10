@@ -10,6 +10,7 @@
     <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="translation.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="scroll-event.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.7.6, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -273,12 +274,12 @@
 
    
     <nav class="navbar-head">
-      <a href="index.html">home</a>
+      <a class="video-pres colorized" href="index.html">home</a>
       <a href="presentation.html">About us</a>
-      <a href="#slider-container">press</a>
-      <a href="#first-event">2023 Edition</a>
-      <a href="#contact-container">Contact us</a>
-      <a href="#surf-event">2024 Edition</a>
+      <a class="slider-press" href="#slider-press">press</a>
+      <a class="first-event" href="#first-event">2023 Edition</a>
+      <a class="contact-id" href="#contact-id">Contact us</a>
+      <a class="surf-event" href="#surf-event">2024 Edition</a>
     </nav>
     <div class="sm-menu">
       <div onclick="togglenavbar()">
@@ -289,16 +290,16 @@
       <nav class="navbar-sm show">
         <a href="index.html">home</a>
         <a href="presentation.html">About us</a>
-        <a href="#slider-container">press</a>
+        <a href="#slider-press">press</a>
         <a href="#first-event">2023 Edition</a>
-        <a href="#contact-container">Contact us</a>
+        <a href="#contact-id">Contact us</a>
         <a href="#surf-event">2024 Edition</a>
        
       </nav>
      
     </div>
   </header>
-    <section class="u-clearfix u-container-align-right u-uploaded-video u-video u-section-1" id="sec-550b">
+    <section class="u-clearfix u-container-align-right u-uploaded-video u-video u-section-1" id="video-pres">
       <div class="u-background-video u-expanded" style="">
         <div class="embed-responsive embed-responsive-1">
           <iframe class="videoId" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="/videos/presentation_video.mp4" data-autoplay="1" frameborder="0" allowfullscreen=""></iframe>
@@ -308,7 +309,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="transparent-bg u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-container-style u-group u-palette-3-base u-shape-circle u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
           <div class="transparent-bg u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
-            <h1 class="u-align-center u-custom-font u-text u-text-1 title-safi-surf" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="250"><span class="highlight">Safi</span> Surf <br> invitational</h1>
+            <h1 class="u-align-center u-custom-font u-text u-text-1 title-safi-surf" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="250">Safi Surf invitational</h1>
             <p data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="250">Safi is the home of internationally renowned surfing spots
             such as Ras Lafâa and Cap Bedouzza for Big Wave Surfing.</p>
             <a href="/presentation.html" class="u-active-palette-3-light-3 u-align-center u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-3 u-radius-50 u-text-active-palette-3-base u-text-body-color u-text-hover-palette-3-base u-white u-btn-1 read-more"> Read more</a>
@@ -322,11 +323,11 @@
         <path fill="currentColor"
           d="M2.5 1A1.5 1.5 0 0 0 1 2.5V10a4 4 0 0 0 4 4v-1a3 3 0 0 1-3-3V7h3.5A1.5 1.5 0 0 0 7 5.5v-3A1.5 1.5 0 0 0 5.5 1zm7 0A1.5 1.5 0 0 0 8 2.5V10a4 4 0 0 0 4 4v-1a3 3 0 0 1-3-3V7h3.5A1.5 1.5 0 0 0 14 5.5v-3A1.5 1.5 0 0 0 12.5 1z" />
       </svg>
-      <h1><span class=""><span>1st</span> edition 2023</h1>
+      <h1>1st edition 2023</h1>
     </div>
     <h2>Safi Surf Invitational</h2>
-    <p>Held on Friday 24 and Saturday 25 March 2023, the 1st edition of the "Safi Surf Invitational" saw the
-      participation of <span class="highlight">36 national and international athletes</span> who took part in a
+    <p class="paragraph-event">Held on Friday 24 and Saturday 25 March 2023, the 1st edition of the "Safi Surf Invitational" saw the
+      participation of 36 national and international athletes who took part in a
       sensational day and night contest in the presence of a huge crowd, enthusiasts and professionals who attended a
       large-scale show.</p>
     <div class="stats">
@@ -1019,7 +1020,7 @@
     </div>
 
   </section>
-    <section class="slider-container" id="slider-container">
+    <section class="slider-container" id="slider-press">
    
     <div class="container">
       <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -1311,7 +1312,7 @@
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
       </section>
-      <section class="contact-container" id="contact-container">
+      <section class="contact-container" id="contact-id">
     <div class="contact-header">
       <h1>contact <span class="highlight">us</span></h1>
     </div>

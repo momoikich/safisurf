@@ -1779,6 +1779,9 @@
   height: 710px;
   margin: -155px auto 80px;
 }
+.u-section-6 #Laura {
+  height: 400px;
+}
 
 .u-section-6 .u-gallery-inner-1 {
   grid-template-columns: repeat(4, auto);
@@ -3811,4 +3814,12 @@ footer .bahri img {
   }
 
   /* Hide the warning */
+}
+
+.navbar-head .colorized {
+  background-color: white;
+  color:#f26f43;
+}
+.memory-title h1 {
+  color: #f26f43;
 }
