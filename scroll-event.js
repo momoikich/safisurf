@@ -14,7 +14,6 @@ window.addEventListener("scroll", () => {
     li.classList.remove("colorized");
     if (li.classList.contains(current)) {
       li.classList.add("colorized");
-      console.log("")
     }
   });
 });

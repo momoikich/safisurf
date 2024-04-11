@@ -3823,3 +3823,14 @@ footer .bahri img {
 .memory-title h1 {
   color: #f26f43;
 }
+.slider-press h1{
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.slider-press svg {
+  color:#f26f43;
+}
