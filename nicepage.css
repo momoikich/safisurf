@@ -19992,6 +19992,7 @@ a.pswp__share--download:hover {
 .u-lightbox .u-image,
 .u-lightbox .u-gallery-item {
   cursor: pointer;
+  height:200px;
 }
 /*end-commonstyles photoswipe-default*/
 /*!

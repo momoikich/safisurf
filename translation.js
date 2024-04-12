@@ -222,4 +222,28 @@ setTimeout(function(){
 
 // })
 
+// ---------------------------------------------
+let SlideItems = document.querySelectorAll('.slide-items')
+
+for (let index = 8; index < SlideItems.length; index++) {
+  
+  SlideItems[index].classList.add('hide-img') 
+}
+function handleLoadingImg(){
+  let showBtn = document.querySelector('.lazy-loading span')
+  
+  let x = setTimeout(()=>{
+    if(SlideItems[SlideItems.length - 1].classList.contains('hide-img')){
+      showBtn.innerHTML = `<a href="#slider-press">show less ...</a>`
+    }else{
+      showBtn.innerHTML = `<a href="#slider-press">show more ...</a>`
+    }
+    for (let index = 8; index < SlideItems.length; index++) {
+  
+      SlideItems[index].classList.toggle('hide-img') 
+    }
+  },2000)
+    
+}
+
 
