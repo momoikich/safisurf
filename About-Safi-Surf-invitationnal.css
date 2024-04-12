@@ -1776,7 +1776,7 @@
 
 .u-section-6 .u-gallery-1 {
   width: 1140px;
-  height: 710px;
+  /* height: 710px; */
   margin: -155px auto 80px;
 }
 .u-section-6 #Laura {
@@ -3331,13 +3331,74 @@ img {
   gap: 10px;
   height: 100px;
 }
-
-.info-wrapper svg {
+.info-wrapper-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-wrapper  svg {
   width: 24px;
   height: 24px;
   color: #f26f43;
 }
-
+.info-col:nth-child(1) .info-wrapper:nth-child(1):hover svg{
+  animation: spinY 1s infinite;
+}
+.info-col:nth-child(1) .info-wrapper:nth-child(2):hover svg{
+  animation: ping 1s infinite forwards;
+}
+.info-col:nth-child(1) .info-wrapper:nth-child(3):hover svg{
+  animation: bounceX .7s infinite forwards;
+}
+.info-col:nth-child(1) .info-wrapper:nth-child(4):hover svg{
+  animation: bounce 1s infinite;
+}
+.info-col:nth-child(2) .info-wrapper:nth-child(1):hover svg{
+  animation: bounce 1s infinite;
+}
+.info-col:nth-child(2) .info-wrapper:nth-child(2):hover svg{
+  animation: ping 1s infinite forwards;
+}
+.info-col:nth-child(2) .info-wrapper:nth-child(3):hover svg{
+  animation: spinY .7s infinite forwards;
+}
+.info-col:nth-child(2) .info-wrapper:nth-child(4):hover svg{
+  animation: ping .6s infinite forwards;
+}
+@keyframes bounceX {
+  0%, 100% {
+    transform: translateX(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 .info-wrapper p {
   font-size: 16px;
   text-wrap: wrap;
@@ -3833,4 +3894,36 @@ footer .bahri img {
 }
 .slider-press svg {
   color:#f26f43;
+}
+
+.hide-img{
+  display: none !important;
+}
+.lazy-loading ,.lazy-spinner{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.lazy-loading span{
+  padding: 15px;
+  background: #f26f43;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 16px;
+  color: white;
+  cursor:pointer;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all .2s ease;
+}
+
+.lazy-loading span:hover{
+  background: #f0f0f0;
+  color: #f26f43;
+  border: 2px solid #f26f43;
 }
