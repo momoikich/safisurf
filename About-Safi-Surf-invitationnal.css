@@ -3927,3 +3927,163 @@ footer .bahri img {
   color: #f26f43;
   border: 2px solid #f26f43;
 }
+
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: 1s box-shadow;
+}
+
+.info-wrapper:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.info-wrapper:hover::before, .info-wrapper:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.info-wrapper:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .large-section .u-gallery-inner-1 {
+  grid-template-columns: repeat(8, auto);
+  min-height: 2000px;
+  grid-gap: 5px;
+}
+  .large-section .lazy-loading {
+    position: absolute;
+    bottom: 5px;
+  }
+}
+@media screen and (max-width:768px) {
+  .large-section {
+    min-height: 7500px;
+
+  }
+  .large-section .lazy-loading {
+    position: absolute;
+    bottom: 5px;
+  }
+}
+
+
+ul {
+  list-style: none;
+  background: whitesmoke;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#dropdown {
+  width: 100%;
+  background: whitesmoke;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+
+

@@ -224,26 +224,40 @@ setTimeout(function(){
 
 // ---------------------------------------------
 let SlideItems = document.querySelectorAll('.slide-items')
+let section_press = document.querySelector('.section-press')
 
 for (let index = 8; index < SlideItems.length; index++) {
   
   SlideItems[index].classList.add('hide-img') 
 }
 function handleLoadingImg(){
-  let showBtn = document.querySelector('.lazy-loading span')
+  let showBtn = document.querySelector('.lazy-loading span');
   
   let x = setTimeout(()=>{
     if(SlideItems[SlideItems.length - 1].classList.contains('hide-img')){
-      showBtn.innerHTML = `<a href="#slider-press">show less ...</a>`
+      showBtn.innerHTML = "show less ...";
+      
+      section_press.classList.add('large-section');
     }else{
-      showBtn.innerHTML = `<a href="#slider-press">show more ...</a>`
+      showBtn.innerHTML = "show more ...";
+      
+      if (section_press.classList.contains('large-section')) {
+      section_press.classList.remove('large-section');
+      }
     }
     for (let index = 8; index < SlideItems.length; index++) {
   
-      SlideItems[index].classList.toggle('hide-img') 
+      SlideItems[index].classList.toggle('hide-img');
     }
   },2000)
+  window.location.href = "index.html#slider-press";
     
 }
+
+let media_nav = document.querySelector(".media");
+media_nav.addEventListener("hover",function(){
+   let dropdown = document.getElementById("dropdown");
+   dropdown.style.display='block';
+})
 
 
