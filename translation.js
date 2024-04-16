@@ -253,11 +253,22 @@ function handleLoadingImg(){
   window.location.href = "index.html#slider-press";
     
 }
-
 let media_nav = document.querySelector(".media");
-media_nav.addEventListener("hover",function(){
-   let dropdown = document.getElementById("dropdown");
-   dropdown.style.display='block';
-})
+let dropdown = document.getElementById("dropdown");
 
+media_nav.addEventListener("mouseover", function(){
+   dropdown.style.display = 'flex';
+   dropdown.style.flexDirection = "column";
+});
+
+media_nav.addEventListener("mouseleave", function(){
+   dropdown.style.display = 'none';
+});
+dropdown.addEventListener("mouseover", function(){
+   dropdown.style.display = 'flex';
+   dropdown.style.flexDirection = "column";
+});
+dropdown.addEventListener("mouseleave", function(){
+   dropdown.style.display = 'none';
+});
 
