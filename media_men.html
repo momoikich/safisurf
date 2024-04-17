@@ -270,7 +270,17 @@
    
     <nav class="navbar-head">
       <a href="index.html">home</a>
-      <a href="presentation.html">About us</a>
+      <div class="event-wrapper">
+          <a class="event" href="#">Event 
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m7 10l5 5l5-5z"/>
+            </svg>
+          </a>
+          <ul id="dropdown-event">
+            <li onclick="go_pres()">Presentation</li>
+            <li onclick="go_live()">Live</li>
+          </ul>
+         </div>
       <a href="#slider-press">press</a>
       <div class="media-wrapper">
         <a class="media" href="#">Media 

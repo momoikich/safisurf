@@ -59,3 +59,9 @@ function go_surf_men() {
 function go_bodyboard() {
     window.location.href = "media_body.html";
 }
+function go_pres() {
+    window.location.href="presentation.html";
+}
+function go_live() {
+   window.location.href = "live.html";
+}
