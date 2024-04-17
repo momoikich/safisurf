@@ -25,4 +25,7 @@ function togglenavbar() {
 function go_surf_women() {
    window.location.href="media.html";
 }
+function go_surf_men() {
+    window.location.href="media_men.html";
+}
 
