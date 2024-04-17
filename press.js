@@ -28,4 +28,7 @@ function go_surf_women() {
 function go_surf_men() {
     window.location.href="media_men.html";
 }
+function go_bodyboard() {
+    window.location.href="media_body.html";
+}
 

@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
   galleries.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+    if (pageYOffset >= sectionTop ) {
       current = section.getAttribute("id");
     }
   });
@@ -55,4 +55,7 @@ function go_surf_women() {
 }
 function go_surf_men() {
     window.location.href="media_men.html";
+}
+function go_bodyboard() {
+    window.location.href = "media_body.html";
 }

@@ -188,7 +188,17 @@
 
     <nav class="navbar-head">
       <a class="video-pres colorized" href="index.html">home</a>
-      <a class= "pres" href="presentation.html">About us</a>
+      <div class="event-wrapper">
+        <a class="event" href="#">Event 
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m7 10l5 5l5-5z"/>
+            </svg>
+        </a>
+        <ul id="dropdown-event">
+            <li onclick="go_pres()">Presentation</li>
+            <li onclick="go_live()">Live</li>
+        </ul>
+      </div>
       <a class="slider-press" href="#slider-press">press</a>
       <div class="media-wrapper">
         <a class="media" href="#">Media 
@@ -197,7 +207,7 @@
             </svg>
         </a>
         <ul id="dropdown">
-            <li>BodyBoard</li>
+            <li onclick="go_bodyboard()">BodyBoard</li>
             <li onclick="go_surf_men()">Surf Men</li>
             <li onclick="go_surf_women()">Surf Women</li>
         </ul>
@@ -372,7 +382,7 @@
             data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500">
             <div class="card-wrapper u-container-layout u-similar-container u-valign-top u-container-layout-1">
 
-              <div class="title-header-wrapper">
+              <div class="title-header-wrapper" onclick="go_surf_men()">
                 <span class="title-header-container">Surf Men <span class="line-title-header"></span></span>
               </div>
               <!-- <p class="u-align-center u-custom-item u-text u-text-4">Running
@@ -503,10 +513,10 @@
             class="card-box u-align-center u-border-15 u-border-no-left u-border-no-right u-border-no-top u-border-palette-3-base u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-custom-border u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-1"
             data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500">
             <div class="card-wrapper u-container-layout u-similar-container u-valign-top u-container-layout-1"
-              onclick="go_media()">
+              >
 
               <!--h5 class="u-align-center u-text u-text-3"> Surf Women</h5-->
-              <div class="title-header-wrapper">
+              <div class="title-header-wrapper" onclick="go_media()">
                 <span class="title-header-container">Surf Women <span class="line-title-header"></span></span>
               </div>
               <!-- <p class="u-align-center u-custom-item u-text u-text-4">Running
@@ -638,7 +648,7 @@
             data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500">
             <div class="card-wrapper u-container-layout u-similar-container u-valign-top u-container-layout-1">
 
-              <div class="title-header-wrapper">
+              <div class="title-header-wrapper" onclick="go_bodyboard()">
                 <span class="title-header-container">BodyBoard <span class="line-title-header"></span></span>
               </div>
               <!-- <p class="u-align-center u-custom-item u-text u-text-4">Running

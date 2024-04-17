@@ -2909,7 +2909,7 @@
 .navbar-head{
   display: flex;
   flex-direction:row;
-  gap:25px;
+  gap:10px;
 }
 .navbar-head a{
   text-decoration:none;
@@ -4046,7 +4046,7 @@ footer .bahri img {
 }
 
 
-#dropdown {
+.navbar-head #dropdown {
     display: none;
     position: absolute;
     width: 100%;
@@ -4057,25 +4057,44 @@ footer .bahri img {
     padding: 10px;
     border-radius: 8px;
 }
-#dropdown li {
+.navbar-head #dropdown li {
     list-style-type: none;
 }
 
-.media-wrapper {
+.navbar-head #dropdown-event {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+.navbar-head #dropdown-event li {
+    list-style-type: none;
+}
+
+.media-wrapper, .event-wrapper {
     position: relative;
 }
-.media {
+.media, .event {
     display: inline-block; /* Pour que text-align fonctionne */
     text-align: center;
 }
-#dropdown li:hover {
+.navbar-head #dropdown-event li:hover {
   color: #f26f43;
   cursor: pointer;
 }
-.media-wrapper {
+.navbar-head #dropdown li:hover {
+  color: #f26f43;
+  cursor: pointer;
+}
+.media-wrapper, .event-wrapper {
   width: 120px;
 }
-.media {
+.media, .event {
   position: absolute;
   width: 100%;
 }
