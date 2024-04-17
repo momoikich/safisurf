@@ -12,6 +12,7 @@
    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
    <script class="u-script" type="text/javascript" src="presentation.js" defer=""></script>
+   <script class="u-script" type="text/javascript" src="scroll-event.js" defer=""></script>
    <meta name="generator" content="Nicepage 6.7.6, nicepage.com">
    <meta name="referrer" content="origin">
    <link id="u-theme-google-font" rel="stylesheet"
@@ -186,12 +187,24 @@
 
 
       <nav class="navbar-head">
-         <a href="index.html">home</a>
-         <a href="presentation.html">About us</a>
-         <a href="index.html#slider-press">press</a>
-         <a href="index.html#first-event">2023 Edition</a>
-         <a href="index.html#contact-id">Contact us</a>
-         <a href="index.html#surf-event">2024 Edition</a>
+         <a class="video-pres colorized"href="index.html">home</a>
+         <a class="pres"href="presentation.html">About us</a>
+         <a class="slider-press" href="index.html#slider-press">press</a>
+         <div class="media-wrapper">
+          <a class="media" href="#">Media 
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m7 10l5 5l5-5z"/>
+            </svg>
+          </a>
+          <ul id="dropdown">
+            <li>BodyBoard</li>
+            <li>Surf Men</li>
+            <li onclick="go_surf_women()">Surf Women</li>
+          </ul>
+         </div>
+         <a class="first-event" href="index.html#first-event">2023 Edition</a>
+         <a class="contact-id"href="index.html#contact-id">Contact us</a>
+         <a class="surf-event"href="index.html#surf-event">2024 Edition</a>
       </nav>
       <div class="sm-menu">
          <div onclick="togglenavbar()">
@@ -213,7 +226,7 @@
       </div>
    </header>
    <section class="u-clearfix u-container-align-right u-uploaded-video u-video u-section-1 presentation-section"
-      id="sec-550b">
+      id="pres">
       <div class="presentation-area">
          <div class="presentation-first-col">
             <div class="text-presentation">
@@ -300,7 +313,7 @@
          <a class="prev" onclick="plusSlides(-1)">❮</a>
          <a class="next" onclick="plusSlides(1)">❯</a>
    </section> -->
-   <section class="u-align-center u-clearfix u-grey-10 u-section-6 slider-press" id="slider-press">
+   <section class="u-align-center u-clearfix u-grey-10 u-section-6 slider-press">
       <!--div class="u-align-center u-container-align-center u-container-style u-expanded-width u-group u-palette-3-base u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
             <h2 class="u-align-center u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">We promote running, walking, and other related activities. </h2>
@@ -308,10 +321,6 @@
             </p>
           </div>
         </div-->
-      <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-          <path fill="currentColor"
-            d="M21 17H3V5h18m0-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v2h8v-2h5a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2" />
-        </svg> Press reports </h1>
       <div class="image-grid-containers">
         <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1" id="Justine">
           <div class="u-gallery-inner u-gallery-inner-1">
@@ -381,10 +390,6 @@
             
           </div>
         </div>
-      </div>
-
-      <div class="lazy-loading">
-         <span onclick="handleLoadingImg()">show more ...</span>
       </div>
     </section>
    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-9d75">

@@ -1,10 +1,3 @@
-
-function togglenavbar() {
-   var navbar = document.querySelector(".navbar-sm");
-   navbar.classList.toggle("show");
-}
-
-
 let media_nav = document.querySelector(".media");
 let dropdown = document.getElementById("dropdown");
 
@@ -23,6 +16,13 @@ dropdown.addEventListener("mouseover", function(){
 dropdown.addEventListener("mouseleave", function(){
    dropdown.style.display = 'none';
 });
+
+function togglenavbar() {
+   var navbar = document.querySelector(".navbar-sm");
+   navbar.classList.toggle("show");
+}
+
 function go_surf_women() {
    window.location.href="media.html";
 }
+

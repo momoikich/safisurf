@@ -4045,37 +4045,17 @@ footer .bahri img {
   }
 }
 
-@media screen and (max-width:1024px) {
-  .large-section .u-gallery-inner-1 {
-  grid-template-columns: repeat(8, auto);
-  min-height: 2000px;
-  grid-gap: 5px;
-}
-  .large-section .lazy-loading {
-    position: absolute;
-    bottom: 5px;
-  }
-}
-@media screen and (max-width:768px) {
-  .large-section {
-    min-height: 7500px;
-
-  }
-  .large-section .lazy-loading {
-    position: absolute;
-    bottom: 5px;
-  }
-}
-
 
 #dropdown {
     display: none;
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 0;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 10px;
+    border-radius: 8px;
 }
 #dropdown li {
     list-style-type: none;
@@ -4088,6 +4068,14 @@ footer .bahri img {
     display: inline-block; /* Pour que text-align fonctionne */
     text-align: center;
 }
-
-
-
+#dropdown li:hover {
+  color: #f26f43;
+  cursor: pointer;
+}
+.media-wrapper {
+  width: 120px;
+}
+.media {
+  position: absolute;
+  width: 100%;
+}

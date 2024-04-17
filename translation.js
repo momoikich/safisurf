@@ -179,7 +179,7 @@ typeEffect(h1, speed);
 
 // type affect to body
 setTimeout(function(){
-  typeEffect(p, speed);
+  typeEffect(p, 1/4*speed);
 }, delay);
 // window.addEventListener("scroll",()=> {
 //    function typeEffect(element, speed) {
@@ -231,26 +231,7 @@ for (let index = 8; index < SlideItems.length; index++) {
   SlideItems[index].classList.add('hide-img') 
 }
 function handleLoadingImg(){
-  let showBtn = document.querySelector('.lazy-loading span');
-  
-  let x = setTimeout(()=>{
-    if(SlideItems[SlideItems.length - 1].classList.contains('hide-img')){
-      showBtn.innerHTML = "show less ...";
-      
-      section_press.classList.add('large-section');
-    }else{
-      showBtn.innerHTML = "show more ...";
-      
-      if (section_press.classList.contains('large-section')) {
-      section_press.classList.remove('large-section');
-      }
-    }
-    for (let index = 8; index < SlideItems.length; index++) {
-  
-      SlideItems[index].classList.toggle('hide-img');
-    }
-  },2000)
-  window.location.href = "index.html#slider-press";
+  window.location.href="press.html";
     
 }
 let media_nav = document.querySelector(".media");
@@ -271,4 +252,6 @@ dropdown.addEventListener("mouseover", function(){
 dropdown.addEventListener("mouseleave", function(){
    dropdown.style.display = 'none';
 });
-
+function go_surf_women() {
+   window.location.href="media.html";
+}
