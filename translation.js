@@ -112,45 +112,45 @@ observer.observe(contact_container);
 
 
 
-// -------------------------------------------
-let countItems = document.querySelectorAll('.count-items-info')
+// // -------------------------------------------
+// let countItems = document.querySelectorAll('.count-items-info')
 
-let endDate = '05/01/2024 00:00:00'
-let x = setInterval(()=>{
-   let now = new Date(endDate).getTime()
-   let countDown = new Date().getTime()
-   let distance = now - countDown
+// let endDate = '05/01/2024 00:00:00'
+// let x = setInterval(()=>{
+//    let now = new Date(endDate).getTime()
+//    let countDown = new Date().getTime()
+//    let distance = now - countDown
 
-   let d = Math.floor(distance/( 1000 * 60 * 60 * 24))
-   let h = Math.floor((distance % (1000 * 60 * 60 * 24))
-   /(1000 * 60 * 60))
-   let m = Math.floor((distance%(1000*60*60))/(1000*60))
-   let s = Math.floor((distance%(1000*60))/(1000))
-   if(s<10){
-      countItems[3].innerHTML = `0${s}`
+//    let d = Math.floor(distance/( 1000 * 60 * 60 * 24))
+//    let h = Math.floor((distance % (1000 * 60 * 60 * 24))
+//    /(1000 * 60 * 60))
+//    let m = Math.floor((distance%(1000*60*60))/(1000*60))
+//    let s = Math.floor((distance%(1000*60))/(1000))
+//    if(s<10){
+//       countItems[3].innerHTML = `0${s}`
    
-   }else{
-      countItems[3].innerHTML = s
-   }
-   if(d<10){
-      countItems[0].innerHTML = `0${d}`
+//    }else{
+//       countItems[3].innerHTML = s
+//    }
+//    if(d<10){
+//       countItems[0].innerHTML = `0${d}`
       
-   }else{
-      countItems[0].innerHTML = d
-   }
-   if(h<10){
-      countItems[1].innerHTML = `0${h}`
+//    }else{
+//       countItems[0].innerHTML = d
+//    }
+//    if(h<10){
+//       countItems[1].innerHTML = `0${h}`
       
-   }else{
-      countItems[1].innerHTML = h
-   }  
-   if(m<10){
-      countItems[2].innerHTML = `0${m}`
-   }else{
-      countItems[2].innerHTML = m
+//    }else{
+//       countItems[1].innerHTML = h
+//    }  
+//    if(m<10){
+//       countItems[2].innerHTML = `0${m}`
+//    }else{
+//       countItems[2].innerHTML = m
 
-   }
-})
+//    }
+// })
 
 function typeEffect(element, speed) {
   var text = element.innerHTML;
@@ -174,8 +174,8 @@ var h1 = document.querySelector('.memory-title h1');
 var p = document.querySelector('.paragraph-event');
 var delay = h1.innerHTML.length * speed + speed;
 
-// type affect to header
-typeEffect(h1, speed);
+// // type affect to header
+// typeEffect(h1, speed);
 
 // type affect to body
 setTimeout(function(){
@@ -285,4 +285,10 @@ dropdown_event.addEventListener("mouseover", function(){
 });
 dropdown_event.addEventListener("mouseleave", function(){
    dropdown_event.style.display = 'none';
+});
+
+
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+	$(this).parent(".sub-menu").children("ul").slideToggle("100");
 });

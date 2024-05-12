@@ -39,6 +39,9 @@
   <meta property="og:title" content="About Safi Surf invitationnal">
   <meta property="og:type" content="website">
   <link rel="canonical" href="/">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <!-- jQuery -->
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
 </head>
 
@@ -188,6 +191,9 @@
 
     <nav class="navbar-head">
       <a class="video-pres colorized" href="index.html">home</a>
+      <a class="first-event" href="#first-event">2023 Edition</a>
+      <a class="surf-event" href="#surf-event">2024 Edition</a>
+      <a class="slider-press" href="#slider-press">press</a>
       <div class="event-wrapper">
         <a class="event" href="#">Event 
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -199,7 +205,7 @@
             <li onclick="go_live()">Live</li>
         </ul>
       </div>
-      <a class="slider-press" href="#slider-press">press</a>
+      
       <div class="media-wrapper">
         <a class="media" href="#">Media 
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -212,9 +218,9 @@
             <li onclick="go_surf_women()">Surf Women</li>
         </ul>
     </div>
-      <a class="first-event" href="#first-event">2023 Edition</a>
+      
       <a class="contact-id" href="#contact-id">Contact us</a>
-      <a class="surf-event" href="#surf-event">2024 Edition</a>
+      
     </nav>
     <div class="sm-menu">
       <div onclick="togglenavbar()">
@@ -224,11 +230,24 @@
       </div>
       <nav class="navbar-sm show">
         <a href="index.html">home</a>
-        <a href="presentation.html">About us</a>
-        <a href="#slider-press">press</a>
         <a href="#first-event">2023 Edition</a>
-        <a href="#contact-id">Contact us</a>
         <a href="#surf-event">2024 Edition</a>
+        <a href="#slider-press">press</a>
+        <div class='event-mobile-wrapper sub-menu'><a id="no-hover">Event<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+			      <ul>
+				      <li><a onclick="go_pres()">Presentation</a></li>
+				      <li><a onclick="go_live()">Live</a></li>
+			      </ul>
+		    </div>   
+        <div class='event-mobile-wrapper sub-menu'><a id="no-hover">Media<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+			      <ul>
+				      <li><a onclick="go_bodyboard()">BodyBoard</a></li>
+				      <li><a onclick="go_surf_men()">Surf Men</a></li>
+              <li><a onclick="go_surf_women()">Surf Women</a></li>
+			      </ul>
+		    </div>      
+        <a href="#contact-id">Contact us</a>
+        
 
       </nav>
 
@@ -264,14 +283,20 @@
   </section>
   <section class="memory-container" id="first-event">
     <div class="memory-title">
-      <h1>1st edition 2023</h1>
+      <h1>1<sup>st</sup> Edition 2023</h1>
     </div>
-    <h2>Safi Surf Invitational</h2>
     <p class="paragraph-event">Held on Friday 24 and Saturday 25 March 2023, the 1st edition of the "Safi Surf
-      Invitational" saw the
-      participation of 36 national and international athletes who took part in a
+      Invitational" saw
+      The participation of 36 national and international athletes who took part in a
       sensational day and night contest in the presence of a huge crowd, enthusiasts and professionals who attended a
-      large-scale show.</p>
+      large-scale show.
+      Live broadcasts on Arriyadia TV and the evening news on 2M TV and Al Aoula were seen by 1,000,000, 4,000,000 and 2,800,000 viewers respectively.
+     Live streaming with 30,000 Internet users.
+     35 articles in the national and international digital press. Production of 3 videos and sharing of videos by
+      athletes.
+      500,000 people reached digitally. 
+      Free surf lessons for an orphanage.
+      Beach clean-up with Association Bahri.</p>
     <div class="stats">
       <div class="stat">
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -364,17 +389,12 @@
         </div>
       </div>
     </div>
-    <p>Live broadcasts on Arriyadia TV and the evening news on 2M TV and Al Aoula were seen by <span
-        class="highlight">1,000,000, 4,000,000 and 2,800,000 viewers</span> respectively. Live streaming with <span
-        class="highlight">30,000 Internet users</span>. <span class="highlight">35 articles</span> in the national and
-      international digital press. Production of <span class="highlight">3 videos</span> and sharing of videos by
-      athletes. <span class="highlight">500,000 people reached digitally</span>. Free surf lessons for an orphanage.
-      Beach clean-up with Association Bahri.</p>
+    
   </section>
   <section class="u-align-center u-clearfix u-container-align-center u-grey-10 u-section-2" id="carousel_371b">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn"
-        data-animation-duration="1750" data-animation-delay="500"> Results of the 1st Edition</h2>
+        data-animation-duration="1750" data-animation-delay="500"> Results of the 1<sup>st</sup> Edition</h2>
       <div class="u-expanded-width u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div
@@ -489,20 +509,7 @@
                     <h6>Yoni Klein</h6>
                     <div class="user-nation">
 
-                      <div class="user-country">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 36 36">
-                          <path fill="#edecec" d="m20.666 19l-.467.809h.934zM18 21.618l.467-.809h-.934z" />
-                          <path fill="#eee"
-                            d="M0 25h36V11H0zM.294 7.5h35.413A4 4 0 0 0 32 5H4A3.999 3.999 0 0 0 .294 7.5" />
-                          <path fill="#edecec"
-                            d="M21.133 16.191h-.934l.467.809zm-5.332 0h-.934l.467.809zm3.243 3.618L20.089 18l-1.045-1.809h-2.088L15.911 18l1.045 1.809zM15.334 19l-.467.809h.934zM18 14.382l-.467.809h.934z" />
-                          <path fill="#0038b8" d="M.294 7.5A3.982 3.982 0 0 0 0 9v2h36V9c0-.531-.106-1.036-.294-1.5z" />
-                          <path fill="#eee" d="M.294 28.5h35.413A4 4 0 0 1 32 31H4a3.999 3.999 0 0 1-3.706-2.5" />
-                          <path fill="#0038b8"
-                            d="M.294 28.5A3.982 3.982 0 0 1 0 27v-2h36v2c0 .531-.106 1.036-.294 1.5zm16.084-7.691L18 23.618l1.622-2.809h3.243L21.244 18l1.622-2.809h-3.243L18 12.382l-1.622 2.809h-3.243L14.756 18l-1.622 2.809zm1.622.809l-.467-.809h.934zm3.133-5.427l-.467.809l-.467-.808h.934zM20.666 19l.467.808h-.934zM18 14.382l.467.809h-.934zm-1.044 1.809h2.089L20.089 18l-1.044 1.809h-2.089L15.911 18zm-1.155 0l-.467.809l-.467-.808h.934zM15.334 19l.467.808h-.934z" />
-                        </svg>
-                        <span>Israel</span>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -806,63 +813,24 @@
   <section class="memory-container second-edition" id="surf-event">
     <div class="memory-title">
       
-      <h1><span class=""><span>2nd</span> edition 2024</h1>
+      <h1>2<sup>nd</sup> Edition 2024</h1>
     </div>
     <h4>Information Of Event Schedule</h4>
 
     <div class="waiting">
-      waiting <span class="highlight">period</span>
+      Waiting period
     </div>
+    <div id="loading-bar">
+      <span>September 1, 2024</span>
+      <div id="loading-circle-wrapper">
+        <div id="loading-circle"></div>
+      </div>
+    </div>  
 
     <div class="date-container">
-      <span class="fin-wait">Mai 1, 2024</span>
+      <span class="fin-wait">December 1, 2024</span>
     </div>
-    <div class="count-time-container">
-      <div class="count-time-wrapper">
-        <div class="count-items">
-          <div class="count-items-info">
-            24
-          </div>
-          <div class="count-items-title">
-            days
-          </div>
-        </div>
-        <div class="count-time-indicator">
-          :
-        </div>
-        <div class="count-items">
-          <div class="count-items-info">
-            00
-          </div>
-          <div class="count-items-title">
-            hours
-          </div>
-        </div>
-        <div class="count-time-indicator">
-          :
-        </div>
-        <div class="count-items">
-          <div class="count-items-info">
-            59
-          </div>
-          <div class="count-items-title">
-            minutes
-          </div>
-        </div>
-        <div class="count-time-indicator">
-          :
-        </div>
-        <div class="count-items">
-          <div class="count-items-info">
-            59
-          </div>
-          <div class="count-items-title">
-            seconds
-          </div>
-        </div>
-
-      </div>
-    </div>
+    
 
     <div class="organizer-wrapper">
       <div class="organizer">
@@ -874,7 +842,7 @@
       </div>
     </div>
     <div class="event-header">
-      <h1>See <span class="highlight">All</span> Details </h1>
+      <h1>See All Details </h1>
     </div>
     <div class="event-info">
 
@@ -991,7 +959,7 @@
     <h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <path fill="currentColor"
           d="M21 17H3V5h18m0-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v2h8v-2h5a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2" />
-      </svg> Press reports </h1>
+      </svg> <div class="highlight">Press reports </div> </h1>
     <div class="image-grid-containers">
       <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1" id="Justine">
         <div class="u-gallery-inner u-gallery-inner-1">

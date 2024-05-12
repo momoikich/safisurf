@@ -56,4 +56,8 @@ dropdown_event.addEventListener("mouseover", function(){
 dropdown_event.addEventListener("mouseleave", function(){
    dropdown_event.style.display = 'none';
 });
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function () {
+	$(this).parent(".sub-menu").children("ul").slideToggle("100");
+});
 
