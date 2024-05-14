@@ -990,6 +990,9 @@
   .u-section-2 .u-image-1 {
     height: 270px;
   }
+  .u-footer {
+    min-height: 250px;
+  }
 
   .u-section-2 .u-text-3 {
     margin-left: 30px;
@@ -2743,6 +2746,9 @@
 .memory-title h1 span {
   color: #f26f43;
 }
+.memory-title h1 {
+  float: center;
+}
 
 @keyframes fade-In-New {
 
@@ -3627,14 +3633,23 @@ img {
     scale: 1;
   }
 }
-footer .insta svg {
+.u-footer {
+  
+  min-height: 150px;
+}
+
+.u-footer img {
+  width: 100%;
+  object-fit: cover;
+}
+.insta svg {
    width: 40px;
    height: 40px;
 }
-footer .bahri img {
+.bahri img {
    width: 100px;
    height: 100px;
-   object-fit: contain;
+   object-fit: contain;   
 }
 .links {
   display: flex;
